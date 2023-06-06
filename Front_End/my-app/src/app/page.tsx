@@ -218,15 +218,15 @@ export default function Home() {
   return (
     <main  className={styles.main} >
       <div className={styles.banner}><Image src={banner_home_customer} className={styles.banner_img} alt=""/></div>
-      {/* <div className={styles.product_catalog}>
-        <p className={styles.catalog_title}>Danh mục sản phẩm</p> */}
+      <div className={styles.product_catalog}>
+        <p className={styles.catalog_title}>Danh mục sản phẩm</p>
         {/* slideshow */}
-        {/* <div className={styles.catalog_slideshow}> */}
+        <div className={styles.catalog_slideshow}>
              {/* slideshowSlider */}
-          {/* <div className={styles.catalog_productList} style={{transform: `translate3d(${-cate_idx*100}%,0,0)`}}> */}
+          <div className={styles.catalog_productList} style={{transform: `translate3d(${-cate_idx*100}%,0,0)`}}>
             {/* mot san pham */}
             {/* slide */}
-            {/* {categorylist.map((cate:any, index)=>(
+            {categorylist.map((cate:any, index)=>(
               <div key={index} className={styles.catalog_product}>
                   <Link href={`/product/${cate.TYPE_PROD}`}>
                 <Image src={cate.Img} width={100} height={120} alt=""></Image>
@@ -346,7 +346,7 @@ export default function Home() {
         </ModalFooter>
       </Modal></div>
         
-      </div> */}
+      </div> 
       {/* <Header/> */}
       
     </main>
